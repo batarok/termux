@@ -2,7 +2,7 @@
 termux-setup-storage
 
 apt update && apt upgrade -y
-apt install -y git nano wget curl php
+apt install -y git nano wget curl php python
 
 
 echo "\n\ncopy files termux & colors properties"
