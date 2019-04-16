@@ -6,9 +6,9 @@ apt install -y git nano wget curl php
 
 
 echo "\n\ncopy files termux & colors properties"
-cp -f "termux/colors.properties" ".termux/colors.properties";
+cp -fr "termux/colors.properties" ".termux/colors.properties";
 break;
-cp -f "termux/termux.properties" ".termux/termux.properties";
+cp -fr "termux/termux.properties" ".termux/termux.properties";
 break;
 echo "\n\n"
 
