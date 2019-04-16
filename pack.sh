@@ -5,13 +5,17 @@ apt update && apt upgrade -y
 apt install -y git nano wget curl php
 
 
-echo "copy files *.properties\n\n"
-cp -fr "termux/*.pro*" ".termux/";
+echo "copy files termux & colors properties"
+cp -f "termux/colors.properties" ".termux/colors.properties";
+break;
+cp -f "termux/termux.properties" ".termux/termux.properties";
+break;
+echo "\n\n"
 
 
-echo "Reload Termux settings\n\n"
+echo "Reload Termux settings"
 termux-reload-settings
-
+echo "\n\n"
 
 echo "Done proses \n"
 echo "Please restart Termux app..."
