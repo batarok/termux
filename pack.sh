@@ -4,9 +4,12 @@ termux-setup-storage
 apt update && apt upgrade -y
 apt install -y git nano wget curl php
 
-cp -f "termux/*.pro*" ".termux/"
+
+echo "copy files *.properties"
+cp -fr "termux/*.pro*" ".termux/";
 
 
+echo "Reload Termux settings"
 termux-reload-settings
 
 
