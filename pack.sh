@@ -5,11 +5,11 @@ apt update && apt upgrade -y
 apt install -y git nano wget curl php
 
 
-echo "copy files *.properties"
+echo "copy files *.properties\n\n"
 cp -fr "termux/*.pro*" ".termux/";
 
 
-echo "Reload Termux settings"
+echo "Reload Termux settings\n\n"
 termux-reload-settings
 
 
