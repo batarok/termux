@@ -4,7 +4,7 @@ termux-setup-storage
 apt update && apt upgrade -y
 apt install -y git nano wget curl php
 
-cp "$HOME/termux/*.properties" "$HOME/.termux/"
+cp -f "termux/*.pro*" ".termux/"
 
 
 termux-reload-settings
