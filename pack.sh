@@ -1,14 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
+echo "Setup Termux Storage"
 termux-setup-storage
 
-apt update && apt upgrade -y
-apt install -y git nano wget curl php python
-
-
 echo "\n\ncopy files termux & colors properties"
-cp -fr "termux/colors.properties" ".termux/colors.properties";
+mkdir -p $HOME/.termux
+cp "termux/colors.properties" ".termux/colors.properties";
 break;
-cp -fr "termux/termux.properties" ".termux/termux.properties";
+cp "termux/termux.properties" ".termux/termux.properties";
 break;
 echo "\n\n"
 
@@ -18,5 +16,5 @@ termux-reload-settings
 echo "\n\n"
 
 echo "Done proses"
-echo "Please restart Termux app..."
+login
 exit
